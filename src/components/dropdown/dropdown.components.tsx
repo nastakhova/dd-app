@@ -3,6 +3,11 @@ import "./dropdown.styles.scss";
 
 const options = ["option1", "option2", "option3", "option4", "option5"];
 
+// add types for all functions , even it's only :void
+// let's imagine you will get options and some callback as propertis. 
+// Callback should back option to top 
+// Could you plz handle this situation dont forget about Interface for DD
+
 function Dropdown() {
   const [isOpen, setOpen] = useState(false);
   const [currentOption, setOption] = useState("choose option");
@@ -33,7 +38,7 @@ function Dropdown() {
   };
 
   const handleChangeOption = (option: string) => {
-    setOption(option);
+    setOption(option); // also dd should close after choosing option
   };
 
   return (
