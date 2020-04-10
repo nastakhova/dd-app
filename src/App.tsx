@@ -1,15 +1,8 @@
 import React from "react";
 import "./App.css";
-import Dropdown from "./components/dropdown/dropdown.components";
-
-import { observer } from "mobx-react";
 
 function App() {
-  return (
-    <div className="App">
-      <Dropdown />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
-export default observer(App);
+export default App;
