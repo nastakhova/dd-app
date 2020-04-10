@@ -1,3 +1,5 @@
+// it'd better create variables for colors, radius and ect and use them 
+
 .dropdown {
   background-color: #fff;
   max-width: 300px;
@@ -8,7 +10,8 @@
 .dropdown_current-option {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: 0.5px solid #2a68d3;
+  // border-radius: 5px 5px 0 0; try to reduce code lines
+  border: 0.5px solid #2a68d3; // use integers, not 0.5 for px 
   padding: 5px 10px;
   font-size: 13px;
   cursor: pointer;
@@ -21,10 +24,10 @@
   left: 0.5px;
   right: 0;
   background-color: #fff;
-  border-left: 0.5px solid #2a68d3;
+  border-left: 0.5px solid #2a68d3; // combine border
   border-right: 0.5px solid #2a68d3;
   border-bottom: 0.5px solid #2a68d3;
-  height: 95px;
+  height: 95px; // what happends when you have more options in non webkit browsers ? 
   overflow: auto;
   transition: 0.3s;
 
@@ -38,7 +41,7 @@
   }
 }
 
-.dropdown_list-options--hidden {
+.dropdown_list-options--hidden { // .&--hidden
   height: 0;
   border-bottom: none;
 }
